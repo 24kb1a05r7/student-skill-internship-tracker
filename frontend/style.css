@@ -1,144 +1,76 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f8;
-    color: #333;
+    margin: 0;
+    background: #f4f7fb;
+    color: #222;
 }
 
 header {
-    background: #1f4e79;
+    background: #2563eb;
     color: white;
+    padding: 20px;
     text-align: center;
-    padding: 25px;
-}
-
-header h1 {
-    margin-bottom: 8px;
 }
 
 nav {
-    background: white;
-    padding: 15px;
+    background: #1e40af;
+    padding: 12px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-nav button {
-    padding: 10px 18px;
-    margin: 5px;
-    border: none;
-    background: #1f4e79;
+nav a {
     color: white;
-    border-radius: 5px;
-    cursor: pointer;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
 }
 
-nav button:hover {
-    background: #163a5c;
+nav a:hover {
+    text-decoration: underline;
 }
 
 main {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 30px auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
-.section {
+section {
     background: white;
     padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-.section h2 {
     margin-bottom: 20px;
-    color: #1f4e79;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
-.cards {
-    display: flex;
-    gap: 20px;
-}
-
-.card {
-    flex: 1;
-    background: #eaf2f8;
-    padding: 25px;
-    text-align: center;
-    border-radius: 8px;
-}
-
-.card h3 {
-    font-size: 30px;
-    color: #1f4e79;
-    margin-bottom: 8px;
-}
-
-input {
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+h1, h2 {
+    margin-top: 0;
 }
 
 button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
-.section > button {
-    padding: 10px 15px;
-    background: #1f4e79;
-    color: white;
-    border: none;
-    border-radius: 5px;
+button:hover {
+    background: #1d4ed8;
 }
 
-ul {
-    margin-top: 20px;
-    padding-left: 20px;
+input,
+select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
 
-li {
+.card {
+    background: #eff6ff;
+    padding: 20px;
+    border-radius: 10px;
     margin: 10px 0;
-}
-
-.internship-card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-top: 15px;
-    border-radius: 8px;
-}
-
-.apply-btn {
-    margin-top: 10px;
-    padding: 8px 15px;
-    background: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-footer {
-    text-align: center;
-    background: #1f4e79;
-    color: white;
-    padding: 15px;
-    margin-top: 30px;
-}
-
-@media (max-width: 600px) {
-    .cards {
-        flex-direction: column;
-    }
-
-    input {
-        width: 100%;
-        margin: 5px 0;
-    }
 }
