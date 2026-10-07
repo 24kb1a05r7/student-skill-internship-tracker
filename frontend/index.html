@@ -9,75 +9,40 @@
 
 <body>
 
-    <header>
-        <h1>Student Skill & Internship Tracker</h1>
-        <p>Manage your skills and internship applications</p>
-    </header>
+<header>
+    <h1>Student Skill & Internship Tracker</h1>
+    <p>Manage your skills, internships and applications</p>
+</header>
 
-    <nav>
-        <button onclick="showSection('dashboard')">Dashboard</button>
-        <button onclick="showSection('skills')">Skills</button>
-        <button onclick="showSection('internships')">Internships</button>
-        <button onclick="showSection('applications')">Applications</button>
-    </nav>
+<nav>
+    <a href="index.html">Dashboard</a>
+    <a href="skills.html">Skills</a>
+    <a href="internships.html">Internships</a>
+    <a href="applications.html">Applications</a>
+</nav>
 
-    <main>
+<main>
+    <section>
+        <h2>Dashboard</h2>
 
-        <section id="dashboard" class="section">
-            <h2>Dashboard</h2>
+        <div class="card">
+            <h3>Skills</h3>
+            <p id="skillCount">0</p>
+        </div>
 
-            <div class="cards">
-                <div class="card">
-                    <h3 id="skillCount">0</h3>
-                    <p>Skills</p>
-                </div>
+        <div class="card">
+            <h3>Internships</h3>
+            <p id="internshipCount">0</p>
+        </div>
 
-                <div class="card">
-                    <h3 id="internshipCount">0</h3>
-                    <p>Internships</p>
-                </div>
+        <div class="card">
+            <h3>Applications</h3>
+            <p id="applicationCount">0</p>
+        </div>
+    </section>
+</main>
 
-                <div class="card">
-                    <h3 id="applicationCount">0</h3>
-                    <p>Applications</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section">
-            <h2>My Skills</h2>
-
-            <input type="text" id="skillInput" placeholder="Enter a skill">
-            <button onclick="addSkill()">Add Skill</button>
-
-            <ul id="skillList"></ul>
-        </section>
-
-        <section id="internships" class="section">
-            <h2>Internships</h2>
-
-            <input type="text" id="companyInput" placeholder="Company name">
-            <input type="text" id="roleInput" placeholder="Role">
-            <button onclick="addInternship()">Add Internship</button>
-
-            <div id="internshipList"></div>
-        </section>
-
-        <section id="applications" class="section">
-            <h2>My Applications</h2>
-
-            <div id="applicationList">
-                <p>No applications yet.</p>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Student Skill & Internship Tracker | FSD-2 Project</p>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -76,6 +76,7 @@ async function addSkill() {
 
 function displaySkills() {
     const list = document.getElementById("skillList");
+if (!list) return;
     list.innerHTML = "";
 
     skills.forEach(skill => {
@@ -116,6 +117,7 @@ async function addInternship() {
 
 function displayInternships() {
     const list = document.getElementById("internshipList");
+    if (!list) return;
     list.innerHTML = "";
 
     if (internships.length === 0) {
@@ -162,6 +164,7 @@ async function applyInternship(internshipId) {
 
 function displayApplications() {
     const list = document.getElementById("applicationList");
+    if (!list) return;  
     list.innerHTML = "";
 
     if (applications.length === 0) {
