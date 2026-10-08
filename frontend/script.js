@@ -130,7 +130,7 @@ function displayInternships() {
         div.className = "internship-card";
 
         const heading = document.createElement("h3");
-        heading.textContent = internship.company;
+        heading.textContent = internship.COMPANY;
 
         const role = document.createElement("p");
         role.textContent = "Role: " + internship.role;
@@ -191,10 +191,13 @@ function displayApplications() {
 }
 
 function updateDashboard() {
-    document.getElementById("skillCount").textContent = skills.length;
-    document.getElementById("internshipCount").textContent = internships.length;
-    document.getElementById("applicationCount").textContent = applications.length;
-}
+    const skillCount = document.getElementById("skillCount");
+    const internshipCount = document.getElementById("internshipCount");
+    const applicationCount = document.getElementById("applicationCount");
 
+    if (skillCount) skillCount.textContent = skills.length;
+    if (internshipCount) internshipCount.textContent = internships.length;
+    if (applicationCount) applicationCount.textContent = applications.length;
+}
 showSection("dashboard");
 loadData();
